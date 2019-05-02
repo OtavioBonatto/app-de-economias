@@ -2,7 +2,7 @@ const UIController = () => {
     const type = document.querySelector('.add__type')
     const description = document.querySelector('.add__description')
     const value = document.querySelector('.add__value')
-    const button = document.querySelector('.ion-ios-checkmark-outline')
+    const button = document.querySelector('.add__btn')
     const incomeContainer = document.querySelector('.income__list')
     const expenseContainer = document.querySelector('.expenses__list')
     const budgetLabel = document.querySelector('.budget__value')
@@ -49,7 +49,7 @@ const UIController = () => {
                     <div class="right clearfix">
                         <div class="item__value">${formatNumber(newItem.value, type)}</div>
                         <div class="item__delete">
-                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            <button class="item__delete--btn"><i class="far fa-times-circle"></i></button>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ const UIController = () => {
                         <div class="item__value">${formatNumber(newItem.value, type)}</div>
                         <div class="item__percentage"></div>
                         <div class="item__delete">
-                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            <button class="item__delete--btn"><i class="far fa-times-circle"></i></button>
                         </div>
                     </div>
                 </div>
